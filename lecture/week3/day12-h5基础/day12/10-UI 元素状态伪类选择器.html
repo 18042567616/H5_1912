@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* input:enabled {
+      background: red;
+    } */
+    /* input:disabled {
+      background: red;
+    } */
+    /* input[disabled] {
+      background: red;
+    } */
+    *::selection {
+      background: orange;
+    }
+    input:checked+label {
+      background: red;
+    }
+    p::selection {
+      background: yellowgreen;
+      color: orange;
+      font-size: 30px;
+      font-style: oblique;
+    }
+    
+  </style>
+</head>
+<body>
+  <form action="" method="" name="">
+    <input type="text">
+    <input type="text" disabled value="aaa">
+    <input type="text">
+    <br>
+    <input type="radio" name="sex"><label>男</label>
+    <input type="radio" name="sex"><label>女</label>
+    <input type="radio" name="sex"><label>未知</label>
+  </form>
+  <p>匹配E元素中被用户选中或处于高亮状态的部分</p>
+  <img src="../day01/images/img1.jpg" alt="">
+</body>
+</html>
+
+<!-- 
+  E:enabled 匹配所有用户界面（form表单）中处于可用状态的E元素
+  E:disabled 匹配所有用户界面（form表单）中处于不可用状态的E元素
+  E:checked 匹配所有用户界面（form表单）中处于选中状态的元素E
+
+
+  E::selection 匹配E元素中被用户选中或处于高亮状态的部分
+  伪元素
+  只能改背景颜色和文字颜色
+ -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      /* height: auto; */
+      background: pink;
+      min-height: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>内容内容内容内容内容</p>
+    <p>内容内容内容内容内容</p>
+    <p>内容内容内容内容内容</p>
+    <p>内容内容内容内容内容</p>
+  </div>
+</body>
+</html>
+
+<!-- 
+  当一个元素的高度不设置，或者设置成auto的时候，它的高度就由内容撑开
+
+  要求：
+    当内容不多或者没有的时候，有最小的高度
+    当内容多的时候，由内容撑开
+
+  min-height
+
+
+  min-height在ie6中不支持，ie6中的height相当于min-height
+
+  属性前面加上下划线，这条属性只有ie6能识别
+  属性前面加上星号，这条属性只有ie6和ie7能识别
+  div {
+    min-height: 100px;
+    _height: 100px;
+  }
+
+  !important,在ie6中不识别(更推荐)
+  div {
+    min-height: 100px;
+    height: auto!important;
+    height: 100px;
+  }
+ -->

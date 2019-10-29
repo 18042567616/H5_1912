@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    section {
+      width: 600px;
+      height: 400px;
+      background-color: rebeccapurple;
+      background-image: url(images/a.png);
+      background-repeat: no-repeat;
+      border: 10px dashed red;
+      padding: 30px;
+      margin: 50px;
+      background-size: contain;
+      /* background-origin: padding-box;
+      background-clip: content-box; */
+    }
+  </style>
+</head>
+<body>
+  <section></section>
+</body>
+</html>
+
+<!-- 
+  1、Background-origin 背景原点
+    说明：
+    指定background-origin属性应该是相对位置
+    属性值：
+    padding-box 背景图像填充框的相对位置
+    border-box 背景图像边界框的相对位置
+    content-box 背景图像的相对位置的内容框
+    注：默认值为：padding-box;
+
+  2、Background-clip 背景裁切
+    说明：
+    background-clip 属性规定背景的绘制区域。
+    属性值：
+    border-box 背景被裁剪到边框盒。
+    padding-box 背景被裁剪到内边距框。
+    content-box 背景被裁剪到内容框。
+    text 背景被裁剪到文字。
+
+  3、Background-size 背景尺寸
+    说明：
+    background-size 规定背景图像的尺寸
+    属性值：
+    length
+    规定背景图的大小。第一个值宽度，第二个值高度。
+
+    Percentage(%)
+    以百分比为值设置背景图大小
+
+    cover
+    把背景图像扩展至足够大，以使背景图像完全覆盖背景区域
+
+    contain
+    把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。
+ -->

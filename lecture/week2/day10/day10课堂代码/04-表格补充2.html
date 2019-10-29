@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    /* h2{
+            margin-top: 100px;
+            text-align: center;
+        } */
+    table {
+      width: 598px;
+      height: 400px;
+      border: 1px solid #0047e1;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    caption {
+      font-size: 22px;
+      caption-side: left;
+    }
+
+    .tr1 {
+      background: #0047e1;
+      font-size: 11px;
+      /* font-weight: 600; */
+      color: #fff;
+    }
+
+    .tr2 {
+      background: #7e9de5;
+      font-size: 11px;
+      font-weight: 600;
+      color: #d8e4f8;
+    }
+
+    .tr3 {
+      background: #ffffff;
+      font-size: 11px;
+      color: #666666;
+    }
+
+    .tr4 {
+      background: #fef0f5;
+      font-size: 11px;
+      color: #666666;
+    }
+    td {
+      text-align: center;
+    }
+    .td1 {
+      text-align: left;
+    }
+    tr {
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <h2>2007年全国非邮发报刊联合征订目录</h2> -->
+  <table rules="groups">
+    <caption>2007年全国非邮发报刊联合征订目录</caption>
+    <colgroup span="2"></colgroup>
+    <colgroup span="2"></colgroup>
+    <thead>
+      <tr class="tr1">
+        <th>代号</th>
+        <th>刊名</th>
+        <th>刊期</th>
+        <th>出版地</th>
+        <th>年定价</th>
+        <th>CH号</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tr2">
+        <td colspan="6" class="td1">A马列主义毛泽东思想</td>
+      </tr>
+      <tr class="tr3">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr4">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr3">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr4">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+
+    </tbody>
+    <tbody>
+      <tr class="tr2">
+        <td colspan="6" class="td1">A马列主义毛泽东思想</td>
+      </tr>
+      <tr class="tr3">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr4">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr3">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr4">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+      <tr class="tr3">
+        <td>0001</td>
+        <td>马克思主义研究</td>
+        <td>月刊</td>
+        <td>北京</td>
+        <td>144.0</td>
+        <td>11-3911</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6" class="td1">总计：888888</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
+
+<!-- 
+  5）、表格标题
+    <caption>标题内容</caption>
+    一定要在表格里面的第一个元素
+    表格标题位置：caption-side:top/right/bottom/left
+    left/right只有在火狐浏览器生效
+
+  6）.表格列标题(放在tr里面)
+    <th></th>
+    特点：加粗，居中
+
+  7）.数据行分组
+    <thead></thead>   表头
+    <tbody></tbody>   表体，一定要有，没有的话浏览器也会自动加上
+    <tfoot></tfoot>   表尾
+    在一个table里面，thead和tfoot只能由一个，tbody可以有多个
+
+  8）.数据列分组
+    <colgroup span="value"></colgroup>
+    FF,chrome, safari支持span和width属性bgcolor . IE6 ,ie7,O支持align
+    作用：colgroup元素会根据从左到右的顺序依次对数据表格进行分组。
+    写在table里面的最上面
+
+    <col    span="value"width="100" align="left" />
+    作用：细化colgroup，需要写在colgroup里
+
+  9）、rules="groups/rows/cols/all/none"    添加组分隔线
+    说明：
+    rows:位于行之间的线条
+    cols:位于列之间的线条
+    all：位于行和列之间的线条
+    none:没有线条
+    groups:位于行组和列组之间的线条
+    说明：
+    1）
+    2）span属性显示指定相邻几列组成一组，span属性值默认为1，默认时仅定义一列为一组。
+    3）可以通过给table添加rules="groups"属性来给分组列添加组分割线。
+ -->

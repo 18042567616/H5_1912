@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrap {
+      width: 500px;
+      height: 100px;
+      background: #ccc;
+      position: relative;
+    }
+    .inner {
+      height: 60px;
+      background: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="inner">dddd</span>
+  </div>
+</body>
+</html>
+
+<!-- 
+  块级元素，宽度不设置或者说设置成100%的时候，那么它的宽度会跟父元素一样
+
+  不设置有的时候会更好一些
+
+
+  浮动情况下，元素会变成块级元素，但是宽度默认是0，由内容撑开
+  定位情况下，元素会变成块级元素，但是宽度默认是0，由内容撑开
+ -->

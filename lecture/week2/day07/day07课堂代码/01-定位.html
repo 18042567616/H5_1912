@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrap {
+      width: 400px;
+      height: 300px;
+      border: 3px solid #000;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .bottom {
+      width: 400px;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 4;
+    }
+
+    .red {
+      width: 50px;
+      height: 50px;
+      background: red;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      font-size: 24px;
+      z-index: 4;
+    }
+    .fixed {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: fixed;
+      right: 200px;
+      bottom: 200px;
+    }
+  </style>
+</head>
+
+<body style="height: 3000px;">
+  <div class="fixed"></div>
+  <div class="wrap">
+    <img
+      src="http://wechatapppro-1252524126.file.myqcloud.com/appjkyl58fL2930/image/compress/larger_5314b2f09e98f84a26117005f5bc9a5c.jpg"
+      alt="">
+    <div class="red">1</div>
+    <div class="bottom"></div>
+  </div>
+</body>
+
+</html>
+
+<!-- 
+  定位三要素
+    定位的目标元素，参照物，坐标
+
+  定位 position
+    1.static: 不进行定位，默认值
+    2.absolute: 绝对定位
+        参照物：离它最近的且带有定位的父元素，如果父元素都没有加定位，那么参照物是html
+        可以配合top/left/bottom/right,进行一个准确的定位，可以加负数
+        top: 目标元素的顶部和参照物顶部的距离
+        bottom: 目标元素的底部和参照物底部的距离
+        特点：会脱离文档流，不占据空间
+    3.relative: 相对定位
+        参照物：是这个元素本身
+        可以配合top/left/bottom/right,进行一个准确的定位，可以加负数
+        特点：不会脱离文档流，占据是之前的空间
+    4.fixed: 固定定位
+        参照物： 是整个浏览器窗口
+        可以配合top/left/bottom/right,进行一个准确的定位，可以加负数
+        特点：会脱离文档流，不占据空间
+    5.sticky: 粘性定位
+        当元素没有滚出窗口的时候，相当于是相对定位，
+        当元素滚出的窗口的时候，相当于是固定定位
+        一般配合top使用
+    6.inhert: 继承
+
+
+  定位的层级: z-index
+    整数,数值越大越前面，默认值是auto，效果跟0一样
+    支持负数，负数时会到所有元素的最后面
+
+  包含块：
+    包含块是绝对定位的基础，包含块就是为绝对定位元素提供坐标，
+    偏移和显示范围的参照物，即确定绝对定位的偏移起点和百分比 长度的参考；
+
+    定义元素为包含块：给绝对定位元素的父元素添加声明position：relative；
+
+  定位的元素直接转成块级元素，可以直接添加宽高
+    
+ -->

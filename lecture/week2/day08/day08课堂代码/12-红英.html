@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    .top {
+      height: 90.8%;
+      position: relative;
+    }
+    .top img {
+      width: 100%;
+      height: 100%;
+    }
+    .zz {
+      position: absolute;
+      width: 100%;
+      height: 5.2%;
+      background: rgba(0, 0, 0, 0.3);
+      left: 0;
+      bottom: 0;
+      text-align: right;
+      line-height: 4.75vh;
+      font-size: 2vh;
+    }
+    /* .zz::after {
+      content: '';
+      display: inline-block;
+      width: 3vw;
+    } */
+    marquee {
+      width: 100%;
+      height: 100%;
+      color: #fff;
+    }
+    .bottom {
+      height: 9.2vh;
+      background: pink;
+    }
+    .bottom img {
+      width: 5%;
+      margin-top: 1.7vh;
+      margin-left: 1.7vw;
+      float: left;
+    }
+    .bottom p {
+      float: left;
+      line-height: 9.2vh;
+      margin-left: 1.4vw;
+      font-size: 2.5vh;
+    }
+    .bottom a {
+      padding: 0 1.5vw;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <img src="images/2.jpg" alt="">
+    <div class="zz">
+      <marquee
+        behavior="scroll" direction="left"
+        scrollamount="20">
+        购买两件商品大九折 
+      </marquee>
+    </div>
+  </div>
+  <div class="bottom">
+    <img src="images/logo.png" alt="">
+    <p>
+      <a href="#">首页</a>
+      <a href="#">首页</a>
+      <a href="#">首页</a>
+      <a href="#">首页</a>
+      <a href="#">首页</a>
+      <a href="#">首页</a>
+    </p>
+  </div>
+</body>
+</html>

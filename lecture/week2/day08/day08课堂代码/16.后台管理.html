@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,body {
+      height: 100%;
+    }
+    body {
+      min-width: 940px;
+    }
+    #header {
+      height: 130px;
+      background: skyblue;
+    }
+    #main {
+      height: calc(100% - 130px);
+      background: pink;
+    }
+    .left {
+      width: 200px;
+      height: 100%;
+      background: skyblue;
+      float: left;
+    }
+    .right {
+      width: calc(100% - 200px);
+      height: 100%;
+      background: yellowgreen;
+      float: left;
+    }
+    .headerLeft {
+      width: 500px;
+      height: 40px;
+      background: red;
+      float: left;
+    }
+    .headerRight {
+      width: 400px;
+      height: 60px;
+      background: khaki;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="headerLeft"></div>
+    <div class="headerRight"></div>
+  </div>
+  <div id="main">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+</html>
+
+<!-- 
+  min-width: 最小宽度
+  小于最小宽度时会出现横向滚动条
+ -->

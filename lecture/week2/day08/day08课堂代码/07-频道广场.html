@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+    h2::before {
+      /* content: url(images/sprite.png); */
+      content: '';
+      width: 25px;
+      height: 20px;
+      display: inline-block;
+      background: url(images/sprite.png) no-repeat;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+    h2::after {
+      content: '';
+      width: 25px;
+      height: 20px;
+      display: inline-block;
+      background: url(images/sprite.png) no-repeat -25px 0;
+      margin-left: 20px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <h2>频道广场</h2>
+</body>
+</html>

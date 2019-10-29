@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "371766",
+      "name": "美女",
+      "font_class": "meinv",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "1669255",
+      "name": "美女",
+      "font_class": "meinv1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3738593",
+      "name": "钱",
+      "font_class": "money",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "4822363",
+      "name": "美女",
+      "font_class": "meinv2",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    }
+  ]
+}

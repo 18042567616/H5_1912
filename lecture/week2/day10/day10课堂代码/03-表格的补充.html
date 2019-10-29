@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    table {
+      width: 500px;
+      height: 200px;
+      border-spacing: 10px;
+      border: 2px solid red;
+      /* border-collapse: collapse; */
+      padding: 20px;
+      table-layout: fixed;
+    }
+    td {
+      background: skyblue;
+      empty-cells: hide;
+    }
+    /* td {
+      border: 2px solid red;
+    } */
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td style="width: 250px;">1</td>
+      <td>2222222</td>
+      <td>3333</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+<!-- 
+  1）、单元格间距(该属性必须给table添加)
+    border-spacing:value;/  用来代替cellspacing
+
+  2）、合并相邻单元格边框(该属性必须给table添加)
+    border-collapse:separate(边框分开)/collapse(边框合并)；
+    如果加了border-collapse: collapse,那么border-spacing就不生效
+
+  3）、无内容单元格显示、隐藏
+    empty-cells:show/hide;
+
+  4）、表格布局算法(该属性必须给table添加)
+    table-layout:auto/fixed(固定宽度，不会随内容多少改变单元格宽度）
+    自动表格布局：列的宽度是由列单元格中没有折行的最宽的内容设定的。
+    缺点：较慢（因为它需要在确定最终的布局前访问表格中的所有内容）。
+    优点：灵活
+    固定表格布局
+    优点：加快运行的速度,允许浏览器更快的对表格进行布局。
+    缺点:不太灵活
+
+    单元格的宽度不会随着内容的多少发生改变，直接改宽度是可以改的
+ -->

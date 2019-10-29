@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div, p, span, a, h1, b, strong, em {
+      width: 200px;
+      height: 100px;
+      border: 3px solid red;
+    }
+    a {
+      display: block;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <img src="../day01/images/img1.jpg" alt="">
+  <input type="text">
+  <div>div1</div>
+  <div>div2</div>
+  <p style="display: none;">p1</p>
+  <p>p2</p>
+  <hr>
+  <span>span1</span>
+  <span>span2</span>
+  <a href="#">a1</a>
+  <a href="#">a2</a>
+  <b>b</b>
+  <strong>strong</strong>
+  <em>em</em>
+  <br>
+  <h1>h111</h1>
+  <ul>
+    <li>11</li>
+    <li>11</li>
+  </ul>
+  <table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+<!-- 
+  元素类型的分类
+    1.块状元素（块级元素）
+      独占一行，默认从上往下排
+      可以直接添加宽高
+      一般作为其他元素的容器
+      在页面里矩形存在
+      div,dl,dt,dd,ol,ul,li,(h1-h6),p,form,hr,table,tr,td,
+
+    2.行内元素（内联元素）
+      不独占一行，默认是从左往右排
+      不能直接添加宽高
+      一般作为内容
+      在页面里是跟内容大小相同的矩形
+      a,span,i,em,strong,b,u,del,s,br,sub,sup
+
+      行内块元素
+        可以直接添加宽高的行内元素
+        img,input
+        在浏览器中img显示是inline，但是完全行内块的特点
+
+    3.可变元素
+      会根据上下文环境，决定是什么元素
+      <button></button>
+
+  元素类型的转换
+    display: 设置或者检索元素的类型
+      block: 把元素转换成块状元素，
+        多数情况下块状元素默认的display值是block
+        li的display默认值是list-item
+        table默认值是table，row，cell
+      inline: 把元素转换成行内元素，行内元素默认的display值是inline
+      inline-block: 把元素转换成行内块元素，行内块元素默认的display值是inline-block
+      none: 隐藏元素，不占空间
+
+  在浮动，定位的情况下，所有的元素都直接变成块级元素，可以直接添加宽高
+
+  行内元素遵循盒模型的规范，但是margin-top/margin-bottom/padding-top/padding-bottom不能正常显示
+
+
+ -->

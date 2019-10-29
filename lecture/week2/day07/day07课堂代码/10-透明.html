@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 0, 0, .5);
+    }
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background: red;
+      opacity: 0.55;
+      filter:alpha(opacity=55);
+    }
+    span {
+      color: rgba(0, 0, 0, .55);
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">1111111111</div>
+  <div class="box2">2222222222<span>33333333</span></div>
+</body>
+</html>
+
+<!-- 
+  rgba()只会改变颜色本身
+
+  opacity是给元素加的，会导致里面所有的元素都加上这个透明度
+
+
+  IE9以下浏览器写法：filter:alpha(opacity=value);取值范围 0-100
+  rgba(255,255,0,0.5)(最后一位值表示透明，取值范围0-1) 只支持IE8以上的浏览器
+ -->

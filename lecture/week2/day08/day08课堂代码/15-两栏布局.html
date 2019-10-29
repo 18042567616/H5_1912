@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      height: 500px;
+      background: #ccc;
+    }
+    .center, .left {
+      float: left;
+    }
+    .center {
+      width: calc(100% - 150px);
+      height: 400px;
+      background: red;
+    }
+    .left {
+      width: 150px;
+      height: 400px;
+      background: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- 150px宽 -->
+    <div class="left"></div>
+    <div class="center"></div>
+  </div>
+</body>
+</html>
+
+<!-- 
+  calc(四则运算)
+  运算符的前后都要有空格
+ -->

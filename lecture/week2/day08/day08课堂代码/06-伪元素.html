@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* div::before { */
+      /* content: url(../day01/images/img1.jpg); */
+      /* display: inline-block;
+      width: 3px;
+      height: 20px;
+      background: green;
+      vertical-align: middle; */
+      /* content: '';
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background: url(../day01/images/img1.jpg);
+    } */
+    div {
+      width: 300px;
+      height: 500px;
+      background: pink;
+    }
+    /* div::first-letter {
+      font-size: 32px;
+      color:red;
+      float: left;
+    } */
+    div::first-line {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>伪元素一定要给块级元素加,默认情况下加进来的元素是行内元素伪元素一定要给块级元素加,默认情况下加进来的元素是行内元素</div>
+</body>
+</html>
+
+<!-- 
+  伪元素/伪对象
+    用css的形式来创建元素
+
+    伪元素一定要给块级元素加,默认情况下加进来的元素是行内元素
+    伪元素可以用一个冒号，也可以用两个冒号
+
+    ::after,在元素里面的最后，加上一个元素
+    ::before,在元素里面的前面，加上一个元素
+    after,before一定要配合content一起用，content写的就是加进去的内容
+
+    ::first-letter
+    ::first-line
+ -->

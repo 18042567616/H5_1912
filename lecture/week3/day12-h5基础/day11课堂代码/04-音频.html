@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <audio src="images/movie.mp4" controls autoplay muted></audio>
+  <audio controls autoplay muted loop>
+    <source src="images/movie.mp3" type="audio/mp3">
+    <source src="images/movie.ogg" type="audio/ogg">
+    <source src="images/movie.mp4" type="audio/mp4">
+    您的浏览器不支持播放视频，请更换浏览器
+  </audio>
+</body>
+</html>
+
+<!-- 
+  视频标签  <audio></audio>
+  <audio src="zhoujie.mp3">audio元素</audio>
+  标签里面的内容指的是浏览器不支持video标签时显示的文字
+
+  属性
+    controls属性：如果出现该属性，则向用户显示控件，比如播放按钮。
+    autoplay属性：如果出现该属性，则视频在就绪后马上播放。
+      新版本的chrome如果没静音，无法自动播放
+    loop属性：重复播放属性。
+    muted属性：静音属性。
+    poster属性：规定视频正在下载时显示的图像，直到用户点击播放按钮。
+
+  支持的格式： mp3/mpeg3  mp4   ogg
+ -->

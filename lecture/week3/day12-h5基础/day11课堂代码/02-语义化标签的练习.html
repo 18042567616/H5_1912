@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    header {
+      height: 15%;
+      background: orange;
+    }
+    main {
+      height: 75%;
+      background: #ccc;
+    }
+    nav {
+      width: 250px;
+      height: 100%;
+      float: left;
+      background: hotpink;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    nav li {
+      height: 60px;
+      border-bottom: 2px solid #fff;
+      list-style: none;
+    }
+    section {
+      height: 100%;
+      background: crimson;
+      /* float: left; */
+      /* width: calc(100% - 550px); */
+      overflow: hidden;
+    }
+    aside {
+      width: 300px;
+      height: 100%;
+      background: cornflowerblue;
+      float: right;
+    }
+    footer {
+      height: 10%;
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <main>
+    <nav>
+      <li>link1</li>
+      <li>link2</li>
+      <li>link3</li>
+      <li>link4</li>
+    </nav>
+    
+    <aside>section元素 表示页面中的一个内容区块
+      article元素 表示一块与上下文无关的独立的内容
+      aside元素 在article之外的，与article内容相关的辅助信息
+      header元素 表示页面中一个内容区块或整个页面的标题
+      footer元素 表示页面中一个内容区块或整个页面的脚注
+      nav元素 表示页面中导航链接部分
+      figure元素 表示一段独立的流内容，使用figcaption元素为其添加标题(第一个或最后一个子元素的位置)
+      main元素 表示页面中的主要的内容 (ie不兼容)
+    </aside>
+    <section>
+        <article>
+          <header></header>
+          <p></p>
+          <footer></footer>
+        </article>
+        <article>
+          <header></header>
+          <p></p>
+          <footer></footer>
+        </article>
+    </section>
+  </main>
+  <footer>footer</footer>
+</body>
+</html>

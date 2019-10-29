@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            /* 去掉所有元素的上下间距 */
+            padding: 0;
+            /* 去掉所有元素的内间距 */
+        }
+        /* .border {
+            width: 400px;
+        }
+        .box {
+            width: 500px;
+            height: 200px;
+            background: orange;
+        }
+        .big {
+            font-size: 30px;
+        } */
+        /* #firstDiv, .big {
+            width: 300px;
+            height: 300px;
+            border: 4px solid black;
+        } */
+        .laowang, .laoli {
+            width: 300px;
+            height: 300px;
+            border: 5px solid green;
+        }
+        .xiaoming {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        .laowang>.xxm {
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="border box" id="firstDiv">111</div>
+    <div class="box big">222</div> -->
+    <div class="laowang">
+        <div class="xiaoming">
+            <div class="xxm"></div>
+        </div>
+        <div class="xxm"></div>
+    </div>
+    <div class="laoli">
+        <div class="xiaoming">
+            <div class="xxm"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    取名规则：
+        见名知义
+        看结构，看内容
+        news
+        news-left   news-center  news-right
+        news_left   news_center  news_right
+        newsLeft    newsCenter   newsRight   newsCenterTitle
+        字母，下划线，连字符，数字，
+        一定不能用数字开头
+
+
+    1.元素选择符/类型选择符
+        场景：
+            1.清除某类元素的默认样式的时候
+            2.统一某类元素的样式的时候
+
+    2.id选择器
+        语法：
+            <标签 id="id名"></标签>
+            #id名 {申明}
+
+        整个页面里面，id名不能重复
+            document.getElementById('box')
+        一般我们用在页面外围结构
+
+    3.class选择器/类选择器
+        语法：  
+            <标签 class="class名"></标签>
+            .class名 {申明}
+        一个class名可以对应多个元素，一个元素也可以有多个class名
+
+    4.*通配符
+        语法：
+            * {申明}
+        所有的元素都加上相同的样式
+        场景：
+            1.清除所有元素的默认样式的时候
+            2.统一所有元素的样式的时候
+
+    5.群组选择器
+        语法：
+            选择器1, 选择器2, .... {申明}
+
+    6.包含选择器
+        语法：
+            选择器1 选择器2 .... {申明}
+        
+        父子关系，选择器1是选择器2的父元素
+
+    7.子选择符
+        语法：
+            选择器1>选择器2 {申明}
+            选择符1中的直接子选择符2,第一代子选择器
+ -->

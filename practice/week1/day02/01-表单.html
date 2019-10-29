@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" name="">
+        <input type="text" value="" placeholder="请输入昵称" maxlength="8">
+        <br>
+        <br>
+        <input type="password" placeholder="请输入密码">
+        <br>
+        <br>
+        <input type="radio" name="sex" value="1">男
+        <input type="radio" name="sex" value="2" checked="checked">女
+        <input type="radio" name="sex" value="3" disabled="disabled">未知
+        <br>
+        <br>
+        <input type="checkbox" name="like" value="1">唱
+        <input type="checkbox" name="like" value="2" checked="checked">跳
+        <input type="checkbox" name="like" value="3" disabled="disabled">rap
+        <input type="checkbox" name="like" value="4" checked="checked">篮球
+        <br>
+        <br>
+        <select>
+            <option value="1">周一</option>
+            <option value="2">周二</option>
+            <option value="3" selected="selected">周三</option>
+            <option value="4">周四</option>
+            <option value="5">周五</option>
+            <option value="6">周六</option>
+            <option value="7">周日</option>
+        </select>
+        <br>
+        <br>
+        <textarea cols="100" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="确定">
+        <input type="reset">
+        <br>
+        <br>
+        <input type="button" value="跳转">
+        <button>
+            <img src="../day01/images/img13.jpg" alt="">
+        </button>
+
+    </form>
+
+</body>
+</html>
+
+<!-- 
+    表单的作用： 搜集用户信息
+        <form><form>
+            表单框（表单域form）
+            action: 后端的地址
+            method: GET   向服务器获取信息，安全性比较低，数据量比较小，效率高
+                    POST  向服务器发送信息，安全性比较高，数据量比较大，效率低
+            name: 表单的标识，告诉后端是哪个表单发送的数据
+
+    表单控件
+        多数的表单控件的标签都是input，根据type属性的不同来区分不同的表单控件
+        根据type属性的不同，value属性也会有不同的变化
+        从左往右排，不会独占一行
+
+        文本框
+            <input type="text" value="" placeholder="" maxlength="">
+            value: 文本框的默认值
+            placeholder： 提示文本
+            maxlength: 输入的最大长度
+        
+        密码框
+            <input type="password" value="" placeholder="" maxlength="">
+            value: 密码框的默认值
+            placeholder： 提示文本
+            maxlength: 输入的最大长度
+
+        提交按钮
+            <input type="submit" value="">
+            value: 按钮里面的文字，默认值是 '提交'
+
+        重置按钮
+            <input type="reset" value="">
+            value: 按钮里面的文字，默认值是 '重置'
+
+        单选框
+            <input type="radio" name="" value="" checked="checked" disabled="disabled">
+            name: 单选框的分组
+            value: 传给后端时的值
+            checked: 默认选中
+            disabled: 不可选
+
+        多选框（复选框）
+            <input type="checkbox" name="" value="" checked="checked" disabled="disabled">
+            name: 多选框的分组
+            value: 传给后端时的值
+            checked: 默认选中
+            disabled: 不可选
+
+        下拉菜单
+            <select>
+                <option value="" selected="selected"></option>
+            </select>
+            value: 传给后端时的值
+            selected: 默认选中的option
+
+        多行文本框
+            <textarea cols="" rows=""></textarea>
+            cols: 一行能写多少个字符
+            rows：一共几行
+
+        跳转按钮
+            <input type="button">
+            <button></button>
+        
+        
+            
+ -->

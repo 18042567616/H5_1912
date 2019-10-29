@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      width: 400px;
+      height: 600px;
+      border: 1px solid #000;
+      margin: 50px auto;
+      padding: 30px;
+    }
+    fieldset {
+      border: 0;
+      border-top: 2px solid #000;
+      padding: 0 20px;
+    }
+    legend {
+      /* text-align: left; */
+      /* text-indent: 20px; */
+      /* margin-left: 20px; */
+      padding: 0 10px;
+    }
+    p {
+      margin: 20px 0;
+    }
+    .label1 {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+    }
+    .label1::after {
+      content: '*';
+      color: red;
+      vertical-align: middle;
+    }
+    .label2 {
+      cursor: pointer;
+    }
+    select {
+      vertical-align: middle;
+    }
+    label {
+      vertical-align: middle;
+    }
+    textarea {
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="" name="">
+    <fieldset>
+      <legend>个人信息</legend>
+      <p>
+        <label class="label1" for="username">姓名</label>
+        <input type="text" id="username">
+      </p>
+      <p>
+        <label class="label1" for="address">地址地址</label>
+        <input type="text" id="address">
+      </p>
+      <p>
+        <label class="label1">婚姻状况</label>
+        <input type="radio" name="hy" id="weihun">
+        <label class="label2" for="weihun">未婚</label>
+        <input type="radio" name="hy" id="yihun">
+        <label class="label2" for="yihun">已婚</label>
+        <input type="radio" name="hy" id="sangou">
+        <label class="label2" for="sangou">丧偶</label>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>其他信息</legend>
+      <fieldset>
+        <legend>ni喜欢这个表单吗?</legend>
+        <p>
+          <label for="yuefen">月份</label>
+          <select id="yuefen">
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+          </select>
+          <label for="riqi">日期</label>
+          <select id="riqi">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>你喜欢什么运动?</legend>
+        <p>
+          <!-- <label class="label1" for="shangchaun">请上传</label> -->
+          <!-- <input type="file"> -->
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <input type="image" src="../day01/images/img1.jpg" alt="上传图片" />
+        </p>
+      </fieldset>
+    </fieldset>
+  </form>
+</body>
+</html>
+
+<!-- 
+  form   name method action
+
+  text 文本框
+  password 密码框
+  submit 提交按钮
+  reset 重置按钮
+  radio 单选框
+  checkbox 多选框
+  select-> option 下拉菜单
+  textarea 多行文本框
+  button 按钮
+
+
+  1.表单字段集
+    <fieldset></fieldset>
+    相当于是一个方框，可以对表单里面的内容进行分组
+    可以嵌套
+
+  2.字段集标题
+    <legend></legend>
+    可以在表单字段集里面创建一个标题，
+    一定要写在表单字段集里面的第一个标签
+
+  3.提示信息标签
+    <label></label>
+    如果需要将label标签和表单控件关联起来，给label加一个for属性，
+    for的属性值要和表单控件的id相同
+
+  4.上传文件框
+    <input type="file">
+
+  5.图像域
+    <input type="image" src="" width="100" height="100" alt="上传图片" />
+
+ -->

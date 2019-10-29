@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      /* width: 100%; */
+      height: 500px;
+      background: #ccc;
+      margin: 50px auto;
+      padding-left: 150px;
+      padding-right: 200px;
+    }
+    .center, .left, .right {
+      float: left;
+    }
+    .center {
+      width: 100%;
+      height: 400px;
+      background: red;
+    }
+    .left {
+      width: 150px;
+      height: 400px;
+      background: yellowgreen;
+      margin-left: -100%;
+      position: relative;
+      left: -150px;
+    }
+    .right {
+      width: 200px;
+      height: 400px;
+      background: blue;
+      margin-right: -200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="center">中间的自适应元素，放到最上面中间的自适应元素，放到最上面中间的自适应元素，放到最上面中间的自适应元素，放到最上面</div>
+    <!-- 150px宽 -->
+    <div class="left"></div>
+    <!-- 200宽 -->
+    <div class="right"></div>
+  </div>
+</body>
+</html>
+
+<!-- 
+  1.中间的自适应元素，放到最上面
+  2.给父元素加padding-left等于左边元素的宽度,padding-right等于右边元素的宽度
+  3.中间的元素宽度100%；
+  4.给左边的元素margin-left: -100%;position:relative;left:-自身的宽度;
+  5.给右边的元素margin-right: -自身宽度
+ -->

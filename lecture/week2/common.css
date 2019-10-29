@@ -1,0 +1,30 @@
+        /* **********************************�޸Ĳ���************************************** */
+        
+        h1:hover,
+        h2:hover,
+        h3,
+        p,
+        blockquote,
+        strong {
+            transition: all 0.5s;
+        }
+        
+        h1:hover,
+        h2:hover,
+        h3:hover,
+        p:hover,
+        strong:hover {
+            margin-left: 50px;
+            background: rgba(83, 246, 11, 0.6);
+            margin-right: 50px;
+        }
+        
+        blockquote:hover {
+            margin-left: 50px;
+            margin-right: 250px;
+            border-radius: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-color: red;
+        }
+        /* **********************************�޸Ĳ���************************************** */

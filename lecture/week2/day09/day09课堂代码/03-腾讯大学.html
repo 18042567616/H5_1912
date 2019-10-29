@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      width: 1000px;
+      height: 78px;
+      background: pink;
+      margin: 50px auto;
+    }
+    li {
+      height: 100%;
+      list-style: none;
+      float: left;
+    }
+    .li1 {
+      width: 91px;
+      background: url(images/nav.png) no-repeat 0 0;
+    }
+    .li2 {
+      width: 114px;
+      background: url(images/nav.png) no-repeat -91px 0;
+    }
+    .li3 {
+      width: 132px;
+      background: url(images/nav.png) no-repeat -205px 0;
+    }
+    li:hover {
+      background-image: url(images/nav-on.png);
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="li1"></li>
+    <li class="li2"></li>
+    <li class="li3"></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .warp {
+      /* width: 200px;
+      height: 50px; */
+      /* background: skyblue; */
+      margin: 50px auto;
+    }
+    .inner {
+      width: 200px;
+      height: 50px;
+      background: skyblue;
+      /* display: inline-block; */
+      float: left;
+    }
+    .warp::before {
+      content: '';
+      /* display: inline-block; */
+      width: 0;
+      height: 0;
+      border: solid 25px;
+      border-color: skyblue skyblue transparent transparent;
+      float: left;
+    }
+    .warp::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border: solid 25px;
+      border-color: skyblue transparent transparent skyblue;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="warp">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>

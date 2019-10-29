@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <style>
+        div {
+            background: red;
+            border: solid green 10px;
+            width: 400px;
+            height: 400px;
+        }
+    </style> -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <style>
+        @import url(./css/style.css);
+    </style> -->
+</head>
+<body>
+    <div style="width: 400px;height: 400px;background: green;border: 10px solid red;"></div>
+</body>
+</html>
+
+<!-- 
+    1.内部样式表
+        <style></style>
+        style标签放在head里面的最下面
+
+    2.外部样式表
+        css语句放在外面css文件里面
+        引入一：
+            <link rel="stylesheet" type="text/css" href="目标文件的路径及文件名全称" />
+            rel（relation）：用于定义文档关联，表示关联样式表；
+        引入二：
+            <style type="text/css">
+                @import url(目标文件的路径及文件名全称);
+            </style>
+
+        差别1：本质的差别：link属于XHTML标签，而@import完全是CSS提供的一种方式。
+        差别2：加载顺序的差别：当一个页面被加载的时候（就是被浏览者浏览的时候），
+            link引用的CSS会同时被加载，而@import引用的CSS会等到页面全部被下载完再被加载。
+            所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。
+        差别3：兼容性的差别：@import是CSS2.1提出的，所以老的浏览器不支持，
+            @import只有在IE5以上的才能识别，而link标签无此问题。
+        差别4：使用dom(document object model文档对象模型 )控制样式时的差别：
+            当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的.
+
+    3.内联样式表（行间样式，行内样式，嵌入式样式、内嵌样式）
+        把style作为标签的一个特殊的属性，
+        把css语句当作style属性的属性值
+ -->

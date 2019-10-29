@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrap {
+      width: 500px;
+      height: 500px;
+      background: #ccc;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .inner {
+      width: 150px;
+      height: 250px;
+      background: red;
+      /* margin: 0 auto; */
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    /* img {
+      vertical-align: middle;
+    }
+    span {
+      display: inline-block;
+      height: 100%;
+      background: red;
+      vertical-align: middle;
+    } */
+  </style>
+</head>
+<body>
+  <!-- <div>
+    <img src="../day01/images/img1.jpg" alt=""><span>ss</span>
+  </div> -->
+  <div class="wrap">
+    <div class="inner"></div><span></span>
+  </div>
+</body>
+</html>
+
+<!-- 
+  1.水平方向居中   给父元素text-align:center
+  2.在图片的后面加一个空的span标签，不能换行，也不能有空格
+  3.要给span标签转成行内块元素，高度设置成100%
+  4.要给图片加vertical-align: middle;
+  5.给span也加上vertical-align: middle;
+ -->

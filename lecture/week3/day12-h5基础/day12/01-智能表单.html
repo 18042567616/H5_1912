@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      width: 600px;
+      padding: 20px;
+      margin: 50px auto;
+    }
+    fieldset {
+      padding: 0 20px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+    }
+    input {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="" name="">
+    <fieldset>
+      <legend>智能表单</legend>
+      <p>
+        <label for="email">邮箱：</label>
+        <input type="email" id="email">
+      </p>
+      <p>
+        <label for="url">url：</label>
+        <input type="url" id="url">
+      </p>
+      <p>
+        <label for="number">number：</label>
+        <input type="number" id="number">
+      </p>
+      <p>
+        <label for="range">range：</label>
+        <input type="range" id="range">
+      </p>
+      <p>
+        <label for="search">search：</label>
+        <input type="search" id="search">
+      </p>
+      <p>
+        <label for="color">color：</label>
+        <input type="color" id="color">
+      </p>
+      <p>
+        <label for="time">time：</label>
+        <input type="time" id="time">
+      </p>
+      <p>
+        <label for="month">month：</label>
+        <input type="month" id="month">
+      </p>
+      <p>
+        <label for="week">week：</label>
+        <input type="week" id="week">
+      </p>
+      <p>
+        <label for="datetime-local">datetime-local：</label>
+        <input type="datetime-local" id="datetime-local">
+      </p>
+      <p>
+        <label></label>
+        <input type="submit">
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
+
+<!-- 
+  Type=“email” 限制用户必须输入email类型
+    只是限制了有@，和@后面有没有内容
+
+  Type=“url” 限制用户必须输入url类型
+    只是限制了前面有http://或者https://等协议
+
+  Type=“number” 限制用户必须输入数字类型
+    chrome只能输入数字，运算符，小数点，右边会多一个上下的箭头
+    firefox可以输入任何内容，但是提交会有提示
+
+  Type=“range” 产生一个滑动条表单
+
+  Type=“search” 产生一个搜索意义的表单
+    chrome上，有内容的情况下，会有一个x，可以清空内容
+    firefox上没有
+
+  Type=“color” 生成一个颜色选择的表单
+
+  Type=“time” 限制用户必须输入时间类型
+    chrome上24小时制，有上下箭头，清除按钮
+    firefox上，12小时制，上下午，没有箭头，有清除按钮
+
+  Type=“month” 限制用户必须输入月类型
+    选择年份和月份，firefox不支持
+
+  Type=“week” 限制用户必须输入周类型
+    选择一年中的第几周，firefox不支持
+
+  Type=“datetime-local” 选取本地时间
+    选择年份和月份和日期和时间，firefox不支持
+ -->

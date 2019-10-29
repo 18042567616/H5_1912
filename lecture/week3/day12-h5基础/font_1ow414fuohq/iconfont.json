@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5483227",
+      "name": "学校",
+      "font_class": "xuexiao",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    section {
+      width: 600px;
+      height: 600px;
+      background: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      /* flex-wrap: wrap;
+      align-content: flex-start; */
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      background: yellowgreen;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 50px;
+      /* flex-shrink: 1; */
+      /* flex-basis: 150px; */
+      flex: 1;
+    }
+    /* div:nth-child(2) {
+      flex-grow: 1;
+    }
+    div:nth-child(3) {
+      flex-grow: 2;
+    } */
+  </style>
+</head>
+<body>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </section>
+</body>
+</html>
+
+<!-- 
+  display
+    flex, inline-flex
+
+  作用：控制子元素在父元素里面的布局位置，弹性盒属性给父元素加
+  
+  特点：
+    1.按照主轴方向排列（默认是从左往右排）
+    2.如果父元素加了弹性盒，那么子元素全部变成块级元素，可以加宽高
+    3.如果想让一个元素在父元素里面水平垂直居中,父元素加display:flex,子元素加margin: auto;
+
+  父元素加的
+
+  1.主轴方向
+    flex-direction
+      row: 从左往右排（默认值）
+      column: 从上往下排
+      row-reverse: 从右往左
+      column-reverse: 从下往上
+
+  2.主轴的排列顺序
+    justify-content
+      flex-start: 排列在主轴顶部
+      center: 排列在主轴的中间
+      flex-end: 排列在主轴的末尾
+      space-around: 平分主轴的剩余空间，两边的距离是中间距离的一半
+      space-between: 平分主轴的剩余空间，两边没有距离
+      space-evenly: 完全平分主轴剩余空间
+
+  3.侧轴--跟主轴垂直的那根轴
+    侧轴的排列方式
+    align-items
+      flex-start: 侧轴顶部对齐
+      center: 侧轴中间对齐
+      flex-end: 侧轴尾部对齐
+      baseline: 效果跟flex-start一样
+      stretch: 如果子元素没有高度，自动铺满父元素的高度
+
+  4.换行
+    flex-wrap
+      nowrap: 不换行
+      wrap: 换行，排不下换行
+      wrap-reverse: 换行，改变侧轴方向
+
+  5.行与行的排列方式
+    align-content
+      flex-start: 行与行侧轴顶端对齐
+      center: 行与行侧轴中间对齐
+      flex-end: 行与行侧轴末尾对齐
+      space-around: 平分侧轴的剩余空间，两边的距离是中间距离的一半
+      space-between: 平分侧轴的剩余空间，两边没有距离
+      space-evenly: 完全平分侧轴剩余空间
+
+
+  子元素
+
+  1.order
+    子元素的排列顺序
+    整数，数值越大越后面，默认auto,作用跟0一样
+
+  2.align-self
+    子元素的侧轴对齐方式
+    flex-start: 侧轴顶部对齐
+    center: 侧轴中间对齐
+    flex-end: 侧轴尾部对齐
+    baseline: 效果跟flex-start一样
+    stretch: 如果子元素没有高度，自动铺满父元素的高度
+
+  3.子元素的放大比例
+    flex-grow
+      平分剩余空间
+      正整数，数值越大占的比例越高
+      如果每个子元素的数值相同，父元素的主轴会被子元素平分
+
+  4.子元素的缩小比例
+    flex-shrink
+      0: 子元素不会被压缩，超出父元素的范围
+      1: 默认值，子元素会在主轴上被压缩
+
+  5.当分配主轴剩余空间之前，计算剩余量
+    flex-basis
+
+  6.flex: flex-grow <flex-shrink> <flex-basis>;
+    flex默认值  0 1 auto
+ -->

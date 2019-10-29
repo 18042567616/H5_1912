@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      width: 400px;
+      margin: 50px auto;
+    }
+    li::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      background: url(images/bg.png) no-repeat;
+      margin-left: 10px;
+    }
+    li[title="ppt"]::after {
+      background: url(images/bg.png) no-repeat 0 -50px;
+    }
+    li[title="picture"]::after {
+      background: url(images/bg.png) no-repeat 0 -175px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <li>word</li>
+    <li title="ppt">ppt</li>
+    <li title="picture">png</li>
+    <li title="excel">excel</li>
+    <li title="picture">jpg</li>
+    <li title="picture">gif</li>
+    <li title="h5">html</li>
+  </nav>
+</body>
+</html>

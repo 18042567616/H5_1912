@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .clear::after {
+      content: '.';
+      display: block;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      clear: both;
+    }
+    .box1 {
+      width: 600px;
+      background: pink;
+    }
+    .son1,.son2 {
+      width: 250px;
+      height: 300px;
+      float: left;
+    }
+    .son1 {
+      background: red;
+    }
+    .son2 {
+      background: blue;
+      margin-left: 50px;
+    }
+    .box2 {
+      height: 200px;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1 clear">
+    <div class="son1"></div>
+    <div class="son2"></div>
+  </div>
+  <div class="box2"></div>
+</body>
+</html>
+
+<!-- 
+  高度塌陷： 父元素没有高度，或者设置成最小高度，子元素有浮动。
+
+
+  解决方案：
+    1.给高度塌陷的元素加overflow: hidden;
+      形成了一个BFC(block formatting context)：块级格式化上下文
+      bfc会形成一个独立的空间，计算高度的时候会把浮动元素计算在内
+
+      缺陷：会隐藏掉溢出的元素
+
+    2.清除浮动clear
+      在高度塌陷的元素里面的最下面，加一个空的div，
+      给这个空div，加一条属性 clear:both;
+      clear: 清除浮动   left清除左浮动  right清除右浮动   both清除两侧浮动
+
+      缺陷：会增加很多无用的元素，形成代码冗余
+
+    3.万能清除法
+      .box1::after {
+        content: '.';
+        display: block;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        clear: both;
+      }
+ -->

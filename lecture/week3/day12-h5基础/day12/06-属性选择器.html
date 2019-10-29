@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* img[title] {
+      width: 200px;
+    } */
+    /* img[title="mao"] {
+      width: 200px;
+    } */
+    /* img[title~="miao"] {
+      width: 200px;
+    } */
+    /* img[title^="ma"] {
+      width: 200px;
+    } */
+    /* img[title*="mao "] {
+      width: 200px;
+    } */
+    /* img[title|="mao"] {
+      width: 200px;
+    } */
+    /* img[class~="aaa"] {
+      width: 200px;
+    } */
+    img[abc^="f"] {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/cat.jpg" alt="" title="jiqimao" class="aaa" abc="efd">
+  <img src="images/cat.jpg" alt="" title="mao" class="bbb aaa" abc="fds">
+  <img src="images/cat.jpg" alt="" title="mao-sdfsdf mimi" class="mc cd bbb" abc="fdd">
+</body>
+</html>
+
+<!-- 
+  1、E[attr]：只使用属性名，但没有确定任何属性值；
+  2、E[attr="value"]：指定属性名，并指定了该属性的属性值；
+  3、E[attr~="value"]：指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，
+    其中词列表中包含了一个value词，而且等号前面的“〜”不能不写
+  4、E[attr^="value"]：指定了属性名，并且有属性值，属性值是以value开头的；
+  5、E[attr$="value"]：指定了属性名，并且有属性值，而且属性值是以value结束的
+  6、E[attr*="value"]：指定了属性名，并且有属性值，而且属值中包含了value；
+  7、E[attr|="value"]：指定了属性名，并且属性值是value或者以“value-”开头的值（比如说zh-cn）;
+ -->

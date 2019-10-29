@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>第12</title>
+<style>
+.red{color:red;}
+</style>
+</head>
+
+<body>
+<h3 class="red">一、表单高级</h3>
+<h3>表单的作用：用来收集用户的信息的;</h3>
+<h3>表单的组成：</h3>
+<h3>表单域&lt;form name=&quot;&quot; method=&quot;&quot; action=&quot;&quot;&gt;&lt;/form&gt;</h3>
+<h3>表单控件&lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;</h3>
+<h3>提示信息&lt;label &nbsp;&nbsp;&nbsp;for=&quot;对应表单控件的id名&quot;&gt;&lt;/label&gt;</h3>
+<h4>例：&lt;label&nbsp;&nbsp;&nbsp;&nbsp;for=&quot;user&quot;&nbsp;&gt;&lt;/label&gt;&lt;input &nbsp;&nbsp;id=&quot;user&quot;&nbsp;&nbsp;type=&quot;text&quot;/&gt;</h4>
+<h4>或：&lt;label&gt;&lt;input type=&quot;password&quot;/&gt;&lt;/label&gt;</h4>
+<h4>作用：当点击提示文本时，能获取对应的表单控件；</h4>
+<h3 class="red">1)表单字段集</h3>
+<h3>&lt;fieldset&gt;&lt;/fieldset&gt;于对表单中的元素进行分组,可以嵌套。</h3>
+<h3>功能：相当于一个方框，在字段集中可以包含文本和其他元素。该元素用于对表单中的元素进行分组并在文档中区别标出文本。fieldset元素可以嵌套，在其内部可以在设置多个fieldset对象。</h3>
+<h3 class="red">2)字段级标题</h3>
+<h3>&lt;legend&gt;&lt;/legend&gt;</h3>
+<h3>功能：legend元素可以在fieldset对象绘制的方框内插入一个标题。legend元素必须是fieldset内的第一个元素。</h3>
+<h3 class="red">&nbsp;</h3>
+<h3>3)表单元素</h3>
+<h3>1）上传文件框 </h3>
+<h3>文件域：&lt;input type="file" /&gt;</h3>
+<h3>2）图像域</h3>
+<h3>&lt;input type="image" src=&quot;&quot; width="100" height="100"  alt="上传图片"   /&gt;</h3>
+<h3 class="red">&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3></h3>
+<h3>1、表格的作用：显示数据;</h3>
+<h3>（一）关于表格的CSS属性</h3>
+<h3 class="red">1）、单元格间距(该属性必须给table添加)</h3>
+<h3>border-spacing:value;/</h3>
+<h3 class="red">2）、合并相邻单元格边框</h3>
+<h3>border-collapse:separate(边框分开)/collapse(边框合并)；</h3>
+<h3 class="red">3）、表格布局算法</h3>
+<h3>table-layout:auto/fixed(固定宽度，不会随内容多少改变单元格宽度）</h3>
+<h3 class="red"><strong>自动表格布局</strong>：列的宽度是由列单元格中没有折行的最宽的内容设定的。</h3>
+<h3 class="red">缺点：较慢（因为它需要在确定最终的布局前访问表格中的所有内容）。</h3>
+<h3 class="red">优点：灵活</h3>
+<h3 class="red">固定表格布局</h3>
+<h3 class="red">优点：加快运行的速度,允许浏览器更快的对表格进行布局。</h3>
+<h3 class="red">缺点:不太灵活</h3>
+<p>&nbsp;</p>
+<h3>4）、无内容单元格显示、隐藏</h3>
+<h3>empty-cells:show/hide;</h3>
+<p>&nbsp;</p>
+<h3 class="red">5）、表格标题</h3>
+<h3 class="red">&lt;caption&gt;标题内容&lt;/caption&gt;</h3>
+<h3>caption:表格标题</h3>
+<h3>表格标题位置：caption-side:top/right/bottom/left</h3>
+<h3>说明：left,right位置只有火狐识别，top,bottom IE7上版本支持，ie7以下版本不支持其它属性值，只识别top</h3>
+<h3 class="red">6）、th:表格列标题（放在tr里）</h3>
+<p>&nbsp;</p>
+<h3 class="red">7）、数据行分组</h3>
+<h3>&lt;thead&gt;&lt;/thead&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表头</h3>
+<h3>&lt;tbody&gt;&lt;/tbody&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表体必需存在的标签</h3>
+<h3>&lt;tfoot&gt;&lt;/tfoot&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表尾</h3>
+<h3>说明：一个Table中，只能包含一个thead,一个tfoot,但可包含多个tbody,tbody标签是写表格时必备的标签。</h3>
+<h3>&nbsp;</h3>
+<p>&nbsp;</p>
+<h3 class="red">8）、数据列分组</h3>
+<h3>&lt;colgroup span=&quot;value&quot;&gt;&lt;/colgroup&gt;FF,chrome, safari支持span和width属性bgcolor . IE6 ,ie7,O支持align</h3>
+<p>作用：colgroup元素会根据从左到右的顺序依次对数据表格进行分组。</p>
+<h3>&lt;col&nbsp;&nbsp;&nbsp; span=&quot;value&quot;width=&quot;100&quot; align=&quot;left&quot; /&gt;</h3>
+<p>作用：细化colgroup，需要写在colgroup里</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>9）、rules=&quot;groups/rows/cols/all/none&quot;&nbsp;&nbsp;&nbsp;&nbsp;添加组分隔线</h3>
+<h3>说明：</h3>
+<h3>rows:位于行之间的线条</h3>
+<h3>cols:位于列之间的线条</h3>
+<h3>all：位于行和列之间的线条</h3>
+<h3>none:没有线条</h3>
+<h3>groups:位于行组和列组之间的线条</h3>
+<h3>说明：</h3>
+<h3>1）</h3>
+<h3>2）span属性显示指定相邻几列组成一组，span属性值默认为1，默认时仅定义一列为一组。</h3>
+<h3>3）可以通过给table添加rules=&quot;groups&quot;属性来给分组列添加组分割线。</h3>
+<h2>&nbsp;</h2>
+</body>
+</html>

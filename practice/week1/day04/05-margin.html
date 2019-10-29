@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 500px;
+            height: 300px;
+            background: pink;
+            overflow: hidden;
+            /* 防止父元素被带下来 */
+        }
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background: red;
+            /* margin: auto; */
+            margin-left: 50%; 
+            margin-top: 50%;
+        }
+        /* .box3 {
+            width: 200px;
+            height: 100px;
+            background: red;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>
+
+<!-- 
+    调整是元素和元素之间的位置关系
+    margin不会改变元素的大小
+
+    单一方向加margin
+        margin-top
+        margin-left
+        margin-bottom
+        margin-right
+
+    不同参数情况
+        一个参数： 上下左右
+        两个参数： 上下    左右
+        三个参数： 上   左右   下
+        四个参数： 上   右    下    左
+
+    margin可以加负值
+
+    如果上面的元素有margin-bottom,下面的元素有margin-top,
+    同号，取绝对值大的    
+    异号，相加
+
+    如果一个元素的第一个子元素有margin-top的时候（且第一个子元素没有浮动或者定位），会把父元素一起带下来
+    最后一个子元素有margin-bottom的时候，不会撑开父元素
+    给父元素加overflow: hidden;
+
+    margin: 0 auto;
+    auto, 占据剩余空间
+    两个auto居中
+    只能做水平方向的居中
+
+    margin加百分比的时候，对应的都是容器的宽度
+
+ -->

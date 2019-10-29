@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      width: 248px;
+      height: 22px;
+      margin: 50px auto;
+      background: red;
+    }
+    li {
+      width: 62px;
+      height: 22px;
+      list-style: none;
+      float: left;
+      text-align: center;
+      line-height: 22px;
+      background-image: url(images/bg.gif);
+      background-repeat: no-repeat;
+      background-position-y: 0;
+      transition: all .4s;
+      /* 过渡属性 */
+    }
+    .li1 {
+      background-position-x: 0;
+    }
+    .li2 {
+      background-position-x: -62px;
+    }
+    .li3 {
+      background-position-x: -124px;
+    }
+    .li4 {
+      background-position-x: -186px;
+    }
+    li:hover {
+      background-position-y: -22px;
+    }
+    /* .li1:hover {
+      background: url(images/bg.gif) no-repeat 0 -22px;
+    }
+    .li2:hover {
+      background: url(images/bg.gif) no-repeat -62px -22px;
+    }
+    .li3:hover {
+      background: url(images/bg.gif) no-repeat -124px -22px;
+    }
+    .li4:hover {
+      background: url(images/bg.gif) no-repeat -186px -22px;
+    } */
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="li1">首页</li>
+    <li class="li2">新闻</li>
+    <li class="li3">娱乐</li>
+    <li class="li4">体育</li>
+  </ul>
+</body>
+</html>
